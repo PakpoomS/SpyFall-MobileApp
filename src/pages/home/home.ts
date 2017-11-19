@@ -10,7 +10,7 @@ export class HomePage {
 
   constructor(private iab: InAppBrowser,public platform: Platform) {
     platform.ready().then(() => {
-     let browser = this.iab.create('https://www.youtube.com','_blank',{zoom:'no',location:'no'});
+     let browser = this.iab.create('http://spyfall.adrianocola.com','_blank',{zoom:'no',location:'no'});
     
      browser.show();
     
