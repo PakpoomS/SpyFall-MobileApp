@@ -18,17 +18,17 @@ export class HomePage {
  slides = [
   {
     title: "Welcome to SpyFall ",
-    description: "This is Show how to play for you !!",
+    description: "This is show how to play for you !! (This game use internet)",
     image: "assets/imgs/ica-slidebox-img-1.png",
   },
   {
-    title: "What is Ionic?",
-    description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
+    title: "How to Settings",
+    description: "Setting as you want to be for ready to play with your friends.",
     image: "assets/imgs/ica-slidebox-img-2.png",
   },
   {
-    title: "What is Ionic Cloud?",
-    description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
+    title: "How to play",
+    description: "Ask a question or talk  to find a spy before time runs out. (Spy don't know locations)",
     image: "assets/imgs/ica-slidebox-img-3.png",
   }
 ];
