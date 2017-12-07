@@ -11,7 +11,7 @@ export class HomePage {
   constructor(private iab: InAppBrowser , public platform: Platform) {}
 
   open(){
-    let browser = this.iab.create('http://spyfall.adrianocola.com','_blank',{zoom:'no',location:'no',suppressesIncrementalRendering:'yes',toolbar:'no'});
+    let browser = this.iab.create('http://bioservices.sci.psu.ac.th:4000','_blank',{zoom:'no',location:'no',suppressesIncrementalRendering:'yes',toolbar:'no'});
     browser.show();
    }
 
