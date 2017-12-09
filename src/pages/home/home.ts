@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController,Platform } from 'ionic-angular';
+import { NavController, Platform , NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { GoapiPage } from '../goapi/goapi';
+
 
 @Component({
   selector: 'page-home',
@@ -8,11 +10,10 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 })
 export class HomePage {
   
-  constructor(private iab: InAppBrowser , public platform: Platform) {}
+  constructor(private iab: InAppBrowser , public platform: Platform, public navCtrl : NavController) {}
 
   open(){
-    let browser = this.iab.create('http://bioservices.sci.psu.ac.th:4000','_blank',{zoom:'no',location:'no',suppressesIncrementalRendering:'yes',toolbar:'no'});
-    browser.show();
+    this.navCtrl.push(GoapiPage);
    }
 
  slides = [

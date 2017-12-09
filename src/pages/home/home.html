@@ -6,7 +6,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="tutorial-page">
+<ion-content class="tutorial-page" padding style="background:url(assets/imgs/background.jpg) no-repeat center;background-size:cover;">
   <ion-slides pager>
     <ion-slide *ngFor="let slide of slides">
       <ion-toolbar>
@@ -21,13 +21,10 @@
     <ion-slide>
       <ion-toolbar>
       </ion-toolbar>
-      <img src="assets/imgs/ica-slidebox-img-4.png" class="slide-image"/>
+      <br><br><br><br><br>
+      <img src="assets/imgs/ica-slidebox-img-4.png" (click)="open()" class="slide-image2"/>
       <h2 class="slide-title">Ready to Play?</h2>
       <h3 clase="slide-title">Credit :  Adrianocola </h3>
-      <button ion-button large clear icon-end color="primary" (click)="open()">
-        Continue
-        <ion-icon name="arrow-forward"></ion-icon>
-      </button>
     </ion-slide>
   </ion-slides>
 </ion-content>
